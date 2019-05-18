@@ -4,7 +4,6 @@ import Routing from './config/Routes';
 import './css/bootstrap-select.css';
 import './css/bootstrap.css';
 import './css/fontawesome-all.css';
-import './css/fullcalendar.css'
 import './css/helper.css';
 import './css/pe-icon-7-stroke.css';
 import './css/scroller.css';

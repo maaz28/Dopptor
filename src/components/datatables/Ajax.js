@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-let subscribers_today = require('../data/subscribers-today.json');
+let subscribers_today = require('../../data/subscribers-today.json');
 
 export default class Ajax extends Component {
 
@@ -46,12 +46,12 @@ export default class Ajax extends Component {
                       <td>
                         <div class="media">
                           <img src={user.picture} class="rounded-circle mr-3 shadow" alt="" />
-                          <span class={"status "+user.status}></span>
+                          <span class={"status " + user.status}></span>
                           <div class="media-body">
                             <p class="mb-0 d-flex w-100 justify-content-between">
                               <span class="bold mb-1 text-capitalize">
                                 {user.name}
-                  </span>
+                              </span>
                             </p>
                             <p class="small color-2 alpha-5 mb-0">
                               {user.email}
@@ -60,26 +60,26 @@ export default class Ajax extends Component {
                         </div>
                       </td>
                       <td>
-                        <a href={"mailto:" + user.email }>{user.email}</a>
+                        <a href={"mailto:" + user.email}>{user.email}</a>
                       </td>
                       <td>
-                        <span class={"badge badge-pill px-2 py-1 shadow-sm brand-"+origin}>
+                        <span class={"badge badge-pill px-2 py-1 shadow-sm brand-" + origin}>
                           {origin}
                         </span>
                       </td>
                       <td>
                         <p class="text-capitalize bold mb-0">
-                        {location.city}
+                          {location.city}
                         </p><p class="text-capitalize mb-0">
                           {location.state}
-                  </p>
+                        </p>
                       </td>
                       <td>
                         <p class="text-capitalize mb-0">
                           {location.street}
-                    </p><p class="text-capitalize mb-0">
+                        </p><p class="text-capitalize mb-0">
                           {location.postcode}
-                  </p>
+                        </p>
                       </td>
                     </tr>
                   )
