@@ -1,0 +1,52 @@
+[
+  {
+    "time": "30 mins ago",
+    "message": "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "from": {
+      "name": "landon wilson",
+      "email": "landon.wilson@example.com",
+      "status": "away",
+      "picture": "https://randomuser.me/api/portraits/thumb/men/82.jpg"
+    }
+  },
+  {
+    "time": "19 days ago",
+    "message": "turpis tortor vehicula faucibus ac",
+    "from": {
+      "name": "elmar da cruz",
+      "email": "elmar.dacruz@example.com",
+      "status": "busy",
+      "picture": "https://randomuser.me/api/portraits/thumb/men/95.jpg"
+    }
+  },
+  {
+    "time": "43 days ago",
+    "message": "aenean ultrices litora arcu dapibus magnis",
+    "from": {
+      "name": "brad graham",
+      "email": "brad.graham@example.com",
+      "status": "busy",
+      "picture": "https://randomuser.me/api/portraits/thumb/men/38.jpg"
+    }
+  },
+  {
+    "time": "3 days ago",
+    "message": "fringilla suspendisse lacus sollicitudin auctor",
+    "from": {
+      "name": "jane freitas",
+      "email": "jane.freitas@example.com",
+      "status": "offline",
+      "picture": "https://randomuser.me/api/portraits/thumb/women/15.jpg"
+    }
+  },
+  {
+    "time": "48 days ago",
+    "message": "parturient ad maecenas",
+    "from": {
+      "name": "salvador morales",
+      "email": "salvador.morales@example.com",
+      "status": "busy",
+      "picture": "https://randomuser.me/api/portraits/thumb/men/98.jpg"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+/* .side-nav {
+      width: 270px;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-left: -270px;
+      -webkit-transition: width .3s ease-in-out, margin-left .3s ease-in-out;
+      transition: width .3s ease-in-out, margin-left .3s ease-in-out; }
+    body .main-body .quick-view {
+      width: 320px;
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3;
+      margin-right: -320px;
+      -webkit-transition: margin-right .3s ease-in-out;
+      transition: margin-right .3s ease-in-out; }
+      body .main-body .quick-view.absolute {
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0; } */
