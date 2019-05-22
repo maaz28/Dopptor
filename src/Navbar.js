@@ -74,25 +74,6 @@ export default class Navbar extends Component {
                   </li>
                 </ul>
               </li>
-              <li class="nav-item nav-dropdown" id="pages" onClick={() => { this.navDropdownHandler("pages") }}>
-                <a href="javascript:;" class="nav-link"> <i class="icon pe pe-7s-bookmarks"></i> <span class="title">Pages</span> </a>
-                <ul class="nav-dropdown-items">
-                  <li class="nav-dropdown" id="user" onClick={() => { this.navDropdownHandler("pages"); this.navDropdownHandler("user") }}>
-                    <a href="javascript:;" class="nav-link"> <i class="icon fas font-sm fa-user"></i> <span class="title">User</span> </a>
-                    <ul class="nav-dropdown-items">
-                      <li>
-                        <Link to="/login" target="_blank" class="nav-link"> <b class="icon extra-bold">L</b> <span class="title">Login</span> </Link>
-                      </li>
-                      <li>
-                        <Link to="/forgot" target="_blank" class="nav-link"> <b class="icon extra-bold">P</b> <span class="title">Recover Password</span> </Link>
-                      </li>
-                      <li>
-                        <Link to="/register" target="_blank" class="nav-link"> <b class="icon extra-bold">R</b> <span class="title">Register</span> </Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
               <li class="nav-header"> <span class="title">Apps</span> </li>
               <li class="nav-item">
                 <Link to="/calendar" class="nav-link"> <i class="icon pe pe-7s-date"></i> <span class="title">Calendar</span> </Link>
