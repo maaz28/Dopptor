@@ -37,7 +37,7 @@ export default class Register extends Component {
                 <p class="color-2 mb-4 mb-md-6">Already have an account?
 							<Link to="/login" class="accent bold">Login here</Link>
                 </p>
-                <form class="cozy" action="srv/login.php" data-validate-on="submit" novalidate>
+                <form class="cozy" action="" data-validate-on="submit" novalidate>
                   <div class="form-group has-icon">
                     <input type="text" id="register_username" class="form-control form-control-rounded" placeholder="Desired username" />
                     <i class="icon fas fa-user-plus"></i>
@@ -62,7 +62,7 @@ export default class Register extends Component {
                 </form>
                 <div class="mt-5">
                   <p class="small color-2">By signing up, I agree to the
-								<a href="terms.html">Terms of Service</a>
+								<a href="javascript:void(0)">Terms of Service</a>
                   </p>
                 </div>
               </div>

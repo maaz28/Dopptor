@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { LoginConsumer } from './config/contextConfig';
+import Logo from './img/logo.png'
 
 export default class Login extends Component {
 
@@ -39,7 +40,7 @@ export default class Login extends Component {
             </div>
             <div class="col-md-5 col-lg-4 mx-auto">
               <div class="login-form mt-5 mt-md-0">
-                <img src="img/logo.png" class="logo img-responsive mb-4 mb-md-6" alt="" />
+                <img src={Logo} class="logo img-responsive mb-4 mb-md-6" alt="" />
                 <h1 class="color-5 bold">Login</h1>
                 <p class="color-2 mt-0 mb-4 mb-md-6">Don't have an account yet?
 							<Link to='/register' class="accent bold">Create it here</Link>
@@ -56,7 +57,7 @@ export default class Login extends Component {
                     <i class="icon fas fa-lock"></i>
                   </div>
                   <div class="form-group d-flex align-items-center justify-content-between">
-                    <Link href="/forgot" class="text-warning small">Forgot your password?</Link>
+                    <Link to="/forgot" class="text-warning small">Forgot your password?</Link>
                     <div class="ajax-button">
                       <div class="fas fa-check btn-status text-success success"></div>
                       <div class="fas fa-times btn-status text-danger failed"></div>

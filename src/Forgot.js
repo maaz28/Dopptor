@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Forgot extends Component {
   render() {
@@ -34,9 +35,9 @@ export default class Forgot extends Component {
                 <img src="img/logo.png" class="logo img-responsive mb-4 mb-md-6" alt="" />
                 <h1 class="color-5 bold">Forgot your password?</h1>
                 <p class="color-2 mt-0 mb-4 mb-md-6">Enter your email bellow to retrieve your account or
-							<a href="login.html" class="accent bold">Login</a>
+							<Link to="/login" class="accent bold">Login</Link>
                 </p>
-                <form class="cozy" action="srv/login.php" data-validate-on="submit" novalidate>
+                <form class="cozy" action="" data-validate-on="submit" novalidate>
                   <div class="form-group has-icon">
                     <input type="text" id="register_email" class="form-control form-control-rounded" placeholder="Your registered email" />
                     <i class="icon fas fa-envelope"></i>
