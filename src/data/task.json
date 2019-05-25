@@ -1,8 +1,32 @@
 [
-    { "description": "Pending task 1", "percentage": 7 },
-    { "description": "Pending task 2", "percentage": 98 },
-    { "description": "Pending task 3", "percentage": 78 },
-    { "description": "Pending task 4", "percentage": 57 },
-    { "description": "Pending task 5", "percentage": 33 },
-    { "description": "Pending task 6", "percentage": 65 }
-  ]
+  {
+    "description": "Pending task 1",
+    "status": "danger",
+    "percentage": 7
+  },
+  {
+    "description": "Pending task 2",
+    "status": "primary",
+    "percentage": 98
+  },
+  {
+    "description": "Pending task 3",
+    "status": "success",
+    "percentage": 78
+  },
+  {
+    "description": "Pending task 4",
+    "status": "primary",
+    "percentage": 57
+  },
+  {
+    "description": "Pending task 5",
+    "status": "warning",
+    "percentage": 33
+  },
+  {
+    "description": "Pending task 6",
+    "status": "success",
+    "percentage": 65
+  }
+]

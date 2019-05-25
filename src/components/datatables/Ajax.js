@@ -19,14 +19,14 @@ export default class Ajax extends Component {
   render() {
     return (
       <div>
-        <header class="page header">
-          <div class="content">
-            <h1 class="display-4 mb-0">DataTables</h1>
-            <p class="lead text-muted">Ajax sourced data</p>
+        <header className="page header">
+          <div className="content">
+            <h1 className="display-4 mb-0">DataTables</h1>
+            <p className="lead text-muted">Ajax sourced data</p>
           </div>
         </header>
-        <div class="content">
-          <table id="dt-ajax" class="table table-hover table-clean" style={{ width: "100%" }}>
+        <div className="content">
+          <table id="dt-ajax" className="table table-hover table-clean" style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th>User</th>
@@ -44,16 +44,16 @@ export default class Ajax extends Component {
                   return (
                     <tr key={i}>
                       <td>
-                        <div class="media">
-                          <img src={user.picture} class="rounded-circle mr-3 shadow" alt="" />
-                          <span class={"status " + user.status}></span>
-                          <div class="media-body">
-                            <p class="mb-0 d-flex w-100 justify-content-between">
-                              <span class="bold mb-1 text-capitalize">
+                        <div className="media">
+                          <img src={user.picture} className="rounded-circle mr-3 shadow" alt="" />
+                          <span className={"status " + user.status}></span>
+                          <div className="media-body">
+                            <p className="mb-0 d-flex w-100 justify-content-between">
+                              <span className="bold mb-1 text-capitalize">
                                 {user.name}
                               </span>
                             </p>
-                            <p class="small color-2 alpha-5 mb-0">
+                            <p className="small color-2 alpha-5 mb-0">
                               {user.email}
                             </p>
                           </div>
@@ -63,21 +63,21 @@ export default class Ajax extends Component {
                         <a href={"mailto:" + user.email}>{user.email}</a>
                       </td>
                       <td>
-                        <span class={"badge badge-pill px-2 py-1 shadow-sm brand-" + origin}>
+                        <span className={"badge badge-pill px-2 py-1 shadow-sm brand-" + origin}>
                           {origin}
                         </span>
                       </td>
                       <td>
-                        <p class="text-capitalize bold mb-0">
+                        <p className="text-capitalize bold mb-0">
                           {location.city}
-                        </p><p class="text-capitalize mb-0">
+                        </p><p className="text-capitalize mb-0">
                           {location.state}
                         </p>
                       </td>
                       <td>
-                        <p class="text-capitalize mb-0">
+                        <p className="text-capitalize mb-0">
                           {location.street}
-                        </p><p class="text-capitalize mb-0">
+                        </p><p className="text-capitalize mb-0">
                           {location.postcode}
                         </p>
                       </td>

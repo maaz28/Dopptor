@@ -9,7 +9,7 @@ import routes from "./config/view_routes";
 export default class Main extends Component {
   render() {
     return (
-      <main class="overflow-hidden bg-6">
+      <main className="overflow-hidden bg-6">
         <Router history={history}>
           <div style={{ padding: "20px" }}>
             {

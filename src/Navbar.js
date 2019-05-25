@@ -12,77 +12,77 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav class="side-nav overlay gradient gradient-53 alpha-9 image-background cover center-bottom" style={{ backgroundImage: "url(https://picsum.photos/350/200/?random&gravity=west)" }}>
-        <div class="side-wrapper content" style={{ margin: "0px" }}>
-          <div class="nav-wrapper">
-            <ul class="nav flex-column">
-              <li class="nav-item user-sidebar nav-dropdown" id="Profile" onClick={() => { this.navDropdownHandler("Profile") }} style={{ cursor: "pointer" }}>
-                <a href="javascript:;" class="nav-link">
-                  <div class="media align-items-center justify-content-center">
-                    <div class="position-relative"> <img src={user} class="user-avatar rounded-circle mr-2" alt="" /> <span class="status status-right online"></span> </div>
-                    <div class="media-body title"> <span class="media-heading bold user-name text-truncate text-capitalize">Kay Peters</span>
-                      <div class="small user-info text-truncate capitalize-first text-muted">kaypeters@example.com</div>
+      <nav className="side-nav overlay gradient gradient-53 alpha-9 image-background cover center-bottom" style={{ backgroundImage: "url(https://picsum.photos/350/200/?random&gravity=west)" }}>
+        <div className="side-wrapper content" style={{ margin: "0px" }}>
+          <div className="nav-wrapper">
+            <ul className="nav flex-column">
+              <li className="nav-item user-sidebar nav-dropdown" id="Profile" onClick={() => { this.navDropdownHandler("Profile") }} style={{ cursor: "pointer" }}>
+                <a href="javascript:;" className="nav-link">
+                  <div className="media align-items-center justify-content-center">
+                    <div className="position-relative"> <img src={user} className="user-avatar rounded-circle mr-2" alt="" /> <span className="status status-right online"></span> </div>
+                    <div className="media-body title"> <span className="media-heading bold user-name text-truncate text-capitalize">Kay Peters</span>
+                      <div className="small user-info text-truncate capitalize-first text-muted">kaypeters@example.com</div>
                     </div>
                   </div>
                 </a>
-                <div class="nav-dropdown-items">
-                  <div class="stat">
-                    <p class="small task d-flex justify-content-between mb-1"> <span class="text-muted">You're running out of space</span> <span class="bold percent text-danger">94%</span> </p>
-                    <div class="progress progress-xs mb-4">
-                      <div class="progress-bar bg-danger" style={{ width: "94%;" }}></div>
+                <div className="nav-dropdown-items">
+                  <div className="stat">
+                    <p className="small task d-flex justify-content-between mb-1"> <span className="text-muted">You're running out of space</span> <span className="bold percent text-danger">94%</span> </p>
+                    <div className="progress progress-xs mb-4">
+                      <div className="progress-bar bg-danger" style={{ width: "94%" }}></div>
                     </div>
                   </div>
-                  <nav class="nav justify-content-between">
-                    <a href="javascript:;" class="nav-link py-3"> <i class="mr-1 fas fa-inbox"></i> <span class="small">Inbox</span> <small class="badge badge-primary">7</small> </a>
-                    <a href="javascript:;" class="nav-link py-3"> <i class="mr-1 fas fa-lock"></i><span class="small">Lock</span> </a>
-                    <a href="javascript:;" class="nav-link py-3"> <i class="mr-1 fas fa-sign-out-alt"></i><span class="small">Log out</span> </a>
+                  <nav className="nav justify-content-between">
+                    <a href="javascript:;" className="nav-link py-3"> <i className="mr-1 fas fa-inbox"></i> <span className="small">Inbox</span> <small className="badge badge-primary">7</small> </a>
+                    <a href="javascript:;" className="nav-link py-3"> <i className="mr-1 fas fa-lock"></i><span className="small">Lock</span> </a>
+                    <a href="javascript:;" className="nav-link py-3"> <i className="mr-1 fas fa-sign-out-alt"></i><span className="small">Log out</span> </a>
                   </nav>
                 </div>
               </li>
-              <li class="nav-header pt-4"> <span>Main</span> </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link"> <i class="icon pe pe-7s-display1"></i> <span class="title">Dashboard</span> </Link>
+              <li className="nav-header pt-4"> <span>Main</span> </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link"> <i className="icon pe pe-7s-display1"></i> <span className="title">Dashboard</span> </Link>
               </li>
-              <li class="nav-item nav-dropdown" id="forms" onClick={() => { this.navDropdownHandler("forms") }}>
-                <a href="javascript:;" class="nav-link"> <i class="icon pe pe-7s-switch"></i> <span class="title">Forms</span> </a>
-                <ul class="nav-dropdown-items">
+              <li className="nav-item nav-dropdown" id="forms" onClick={() => { this.navDropdownHandler("forms") }}>
+                <a href="javascript:;" className="nav-link"> <i className="icon pe pe-7s-switch"></i> <span className="title">Forms</span> </a>
+                <ul className="nav-dropdown-items">
                   <li>
-                    <Link to='/forms/basic' class="nav-link"> <b class="icon extra-bold">B</b> <span class="title">Basic inputs</span> </Link>
+                    <Link to='/forms/basic' className="nav-link"> <b className="icon extra-bold">B</b> <span className="title">Basic inputs</span> </Link>
                   </li>
                   <li>
-                    <Link to="/forms/checkbox-radio" class="nav-link"> <b class="icon extra-bold">C</b> <span class="title">Checkbox & Radio</span> </Link>
+                    <Link to="/forms/checkbox-radio" className="nav-link"> <b className="icon extra-bold">C</b> <span className="title">Checkbox & Radio</span> </Link>
                   </li>
                   {/* <li>
-                    <a href="forms/date-picker.html" class="nav-link"> <b class="icon extra-bold">D</b> <span class="title">Date Picker</span> </a>
+                    <a href="forms/date-picker.html" className="nav-link"> <b className="icon extra-bold">D</b> <span className="title">Date Picker</span> </a>
                   </li> */}
                   <li>
-                    <Link to="/forms/input-groups" class="nav-link"> <b class="icon extra-bold">I</b> <span class="title">Input Groups</span> </Link>
+                    <Link to="/forms/input-groups" className="nav-link"> <b className="icon extra-bold">I</b> <span className="title">Input Groups</span> </Link>
                   </li>
                   <li>
-                    <Link to="/forms/select" class="nav-link"> <b class="icon extra-bold">S</b> <span class="title">Select 2</span> </Link>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item nav-dropdown" id="data_tables" onClick={() => { this.navDropdownHandler("data_tables") }}>
-                <a href="javascript:;" class="nav-link"> <i class="icon pe pe-7s-browser"></i> <span class="title">Data Tables</span> </a>
-                <ul class="nav-dropdown-items">
-                  <li>
-                    <Link to="/data/ajax" class="nav-link"> <b class="icon extra-bold">A</b> <span class="title">Ajax</span> </Link>
-                  </li>
-                  <li>
-                    <Link to="/data/checkbox" class="nav-link"> <b class="icon extra-bold">C</b> <span class="title">Checkbox</span> </Link>
+                    <Link to="/forms/select" className="nav-link"> <b className="icon extra-bold">S</b> <span className="title">Select 2</span> </Link>
                   </li>
                 </ul>
               </li>
-              <li class="nav-header"> <span class="title">Apps</span> </li>
-              <li class="nav-item">
-                <Link to="/calendar" class="nav-link"> <i class="icon pe pe-7s-date"></i> <span class="title">Calendar</span> </Link>
-              </li>
-              <li class="nav-item nav-dropdown" id="invoices" onClick={() => { this.navDropdownHandler("invoices") }}>
-                <a href="javascript:;" class="nav-link"> <i class="icon pe pe-7s-note2"></i> <span class="title">Invoices</span> </a>
-                <ul class="nav-dropdown-items">
+              <li className="nav-item nav-dropdown" id="data_tables" onClick={() => { this.navDropdownHandler("data_tables") }}>
+                <a href="javascript:;" className="nav-link"> <i className="icon pe pe-7s-browser"></i> <span className="title">Data Tables</span> </a>
+                <ul className="nav-dropdown-items">
                   <li>
-                    <Link to="/invoice" class="nav-link"> <b class="icon extra-bold">1</b> <span class="title">Version 1</span> </Link>
+                    <Link to="/data/ajax" className="nav-link"> <b className="icon extra-bold">A</b> <span className="title">Ajax</span> </Link>
+                  </li>
+                  <li>
+                    <Link to="/data/checkbox" className="nav-link"> <b className="icon extra-bold">C</b> <span className="title">Checkbox</span> </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-header"> <span className="title">Apps</span> </li>
+              <li className="nav-item">
+                <Link to="/calendar" className="nav-link"> <i className="icon pe pe-7s-date"></i> <span className="title">Calendar</span> </Link>
+              </li>
+              <li className="nav-item nav-dropdown" id="invoices" onClick={() => { this.navDropdownHandler("invoices") }}>
+                <a href="javascript:;" className="nav-link"> <i className="icon pe pe-7s-note2"></i> <span className="title">Invoices</span> </a>
+                <ul className="nav-dropdown-items">
+                  <li>
+                    <Link to="/invoice" className="nav-link"> <b className="icon extra-bold">1</b> <span className="title">Version 1</span> </Link>
                   </li>
                 </ul>
               </li>

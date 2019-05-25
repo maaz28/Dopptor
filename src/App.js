@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <div class="main-body">
+      <div className="main-body">
         <Navbar />
         <Main />
         <Sidebar />

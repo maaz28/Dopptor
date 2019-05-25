@@ -4,12 +4,12 @@ import Dashboard from "../components/Dashboard";
 import Calender from "../components/Calender";
 import Invoice from "../components/Invoice";
 import Basics from "../components/forms/Basics";
-import Select2 from '../components/forms/Select2';
 import InputGroups from "../components/forms/InputGroups";
 import CheckboxRadio from "../components/forms/CheckboxRadio";
 import DatePicker from "../components/forms/DatePicker";
 import Ajax from "../components/datatables/Ajax";
 import checkbox from "../components/datatables/checkbox";
+import Select2Form from "../components/forms/Select2Form";
 
 // Route Views
 
@@ -34,7 +34,7 @@ export default [
   },
   {
     path: "/forms/select",
-    component: Select2
+    component: Select2Form
   },
   {
     path: "/forms/input-groups",

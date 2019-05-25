@@ -10,8 +10,10 @@
     "@fullcalendar/timegrid": "^4.1.0",
     "@material-ui/core": "^3.9.3",
     "chart.js": "^2.8.0",
+    "chroma-js": "^2.0.3",
     "history": "^4.9.0",
     "jquery": "^3.4.1",
+    "jvectormap-next": "^3.0.0",
     "namor": "^1.1.2",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
@@ -20,7 +22,10 @@
     "react-grid-system": "^4.4.5",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "react-select": "^2.4.3",
+    "react-select2": "^4.0.3",
     "react-table": "^6.10.0",
+    "select2": "^4.0.7",
     "simplebar-react": "^1.0.0-alpha.9"
   },
   "scripts": {

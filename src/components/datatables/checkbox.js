@@ -18,13 +18,13 @@ export default class checkbox extends Component {
 
     return (
       <>
-        <header class="page header">
-          <div class="content">
-            <h1 class="display-4 mb-0">DataTables</h1>
-            <p class="lead text-muted">Checkbox select sample</p>
+        <header className="page header">
+          <div className="content">
+            <h1 className="display-4 mb-0">DataTables</h1>
+            <p className="lead text-muted">Checkbox select sample</p>
           </div>
         </header>
-        <div class="content">
+        <div className="content">
           <div>
             <ReactTable
               data={data}
@@ -64,7 +64,7 @@ export default class checkbox extends Component {
             <br />
             <Tips />
           </div>
-          {/* <table id="dt-checkbox-select" class="table table-hover table-clean" style={{width:"100%"}}>
+          {/* <table id="dt-checkbox-select" className="table table-hover table-clean" style={{width:"100%"}}>
               <thead>
                 <tr>
                   <th>Name</th>
