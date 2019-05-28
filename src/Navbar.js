@@ -51,9 +51,9 @@ export default function Navbar() {
                 <li>
                   <Link to="/forms/checkbox-radio" className="nav-link"> <b className="icon extra-bold">C</b> <span className="title">Checkbox & Radio</span> </Link>
                 </li>
-                {/* <li>
-                    <a href="forms/date-picker.html" className="nav-link"> <b className="icon extra-bold">D</b> <span className="title">Date Picker</span> </a>
-                  </li> */}
+                <li>
+                    <Link to="/forms/date-picker" className="nav-link"> <b className="icon extra-bold">D</b> <span className="title">Date Picker</span> </Link>
+                  </li>
                 <li>
                   <Link to="/forms/input-groups" className="nav-link"> <b className="icon extra-bold">I</b> <span className="title">Input Groups</span> </Link>
                 </li>
