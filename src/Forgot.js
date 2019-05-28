@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-export default class Forgot extends Component {
-  render() {
+export default function Forgot () {
     return (
       <main>
         <div className="container-fluid">
@@ -56,4 +55,3 @@ export default class Forgot extends Component {
 
     )
   }
-}

@@ -11,8 +11,6 @@ import Ajax from "../components/datatables/Ajax";
 import checkbox from "../components/datatables/checkbox";
 import Select2Form from "../components/forms/Select2Form";
 
-// Route Views
-
 
 export default [
   {

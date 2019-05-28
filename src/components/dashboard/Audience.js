@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import AudienceTable from '../templates/AudienceTable';
+import Map from './Map';
 
 export default class Audience extends Component {
   render() {
@@ -29,7 +30,9 @@ export default class Audience extends Component {
               </div>
             </div>
             <div className="col-lg-6 ml-lg-auto">
-              <div id="world-map" style={{ height: "300px;" }}></div>
+              <div id="world-map" style={{ height: "300px" }}>
+                <Map />
+              </div>
             </div>
           </div>
         </div>

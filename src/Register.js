@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Logo from './img/logo.png'
 import { Link } from 'react-router-dom'
-export default class Register extends Component {
-  render() {
+
+export default function Register (){
     return (
       <main>
         <div className="container-fluid">
@@ -72,4 +72,3 @@ export default class Register extends Component {
       </main>
     )
   }
-}

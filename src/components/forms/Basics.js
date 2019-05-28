@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Basics extends Component {
-  render() {
+export default function Basics (){
     return (
       <>
         <header className="page header">
@@ -468,4 +467,3 @@ export default class Basics extends Component {
       </>
     )
   }
-}

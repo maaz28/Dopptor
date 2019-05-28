@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
-import Dashboard from './components/Dashboard';
 import {
   Router,
   Route
 } from 'react-router-dom';
 import history from './config/history';
 import routes from "./config/view_routes";
-export default class Main extends Component {
-  render() {
+
+export default function Main () {
     return (
       <main className="overflow-hidden bg-6">
         <Router history={history}>
-          <div style={{ padding: "20px" }}>
+          <div>
             {
               routes.map((route, index) => {
                 return (
@@ -29,4 +28,3 @@ export default class Main extends Component {
       </main>
     )
   }
-}

@@ -141,7 +141,7 @@ export default class Select2Form extends Component {
                 <div className="form-group">
                   <label>Multiple select</label>
                   <Select
-                    value={[options[2], options[3]]}
+                    defaultValue={[options[2], options[3]]}
                     isMulti
                     name="colors"
                     options={options}
@@ -154,7 +154,7 @@ export default class Select2Form extends Component {
                   <Select
                     closeMenuOnSelect={false}
                     components={makeAnimated()}
-                    value={[options[0], options[1]]}
+                    defaultValue={[options[0], options[1]]}
                     isMulti
                     options={options}
                   />

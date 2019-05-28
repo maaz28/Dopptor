@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Footer extends Component {
-  render() {
+export default function Footer() {
     return (
       <footer className="main-footer">
         <div className="container-fluid d-flex justify-content-between small">
@@ -14,4 +13,3 @@ export default class Footer extends Component {
       </footer>
     )
   }
-}
