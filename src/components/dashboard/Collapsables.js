@@ -1,7 +1,63 @@
 import React, { Component } from 'react'
 import { Chart } from "react-google-charts";
+import { Link } from 'react-router-dom'
+import RecentSubscriber from '../templates/Recently-Subscriber'
+import Twitter from '../templates/Twitter-trends'
+import Youtube from '../templates/Most-Viewed-yt-videos'
+import Facebook from '../templates/Fb-audience-growth'
 
 export default class Collapsables extends Component {
+
+  toggleCollapse = (id1,id2) =>{
+    if (document.getElementById(id1).classList.contains('show')){
+      document.getElementById(id1).classList.toggle('show')
+      document.getElementById(id1).classList.toggle('collapse')
+      document.getElementById(id1).classList.toggle('collapsing')
+      // document.getElementById(id1).setAttribute('style','')
+      // document.getElementById(id1).classList.toggle('collapse-show')
+      setTimeout(() => {
+        document.getElementById(id1).classList.toggle('collapse')
+        // document.getElementById(id1).setAttribute('style','')
+        document.getElementById(id1).classList.toggle('collapsing')
+      }, 300)
+    }
+    else{
+      document.getElementById(id1).classList.toggle('collapse')
+      document.getElementById(id1).classList.toggle('collapsing')
+      document.getElementById(id1).setAttribute('style','height:455px')
+      setTimeout(() => {
+        document.getElementById(id1).classList.toggle('collapsing')
+        document.getElementById(id1).classList.toggle('collapse')
+        document.getElementById(id1).classList.toggle('show')
+        document.getElementById(id1).setAttribute('style','')
+      }, 300)
+    }
+    // else if (document.getElementById(id1).classList.contains('collapse-show')){
+    //   document.getElementById(id1).classList.toggle('collapse-show')
+    //   document.getElementById(id1).classList.toggle('collapsing')
+    //   setTimeout(() => {
+    //     document.getElementById(id1).classList.toggle('collapse')
+    //     document.getElementById(id1).classList.toggle('collapsing')
+    //   }, 300)
+
+    // }
+    // document.getElementById(id1).classList.toggle('collapsing')
+    // document.getElementById(id1).classList.toggle('collapse')
+    // setTimeout(()=>{
+    //   document.getElementById(id1).classList.toggle('collapse')
+    //   document.getElementById(id1).classList.toggle('collapse-show')
+    //   document.getElementById(id1).classList.toggle('collapsing')
+    // },300)
+    // document.getElementById(id1).classList.toggle('collapsing')
+    // setTimeout(() => {
+    // document.getElementById(id1).classList.toggle('show')
+    // document.getElementById(id1).classList.toggle('collapsing')
+    // }, 300)
+    document.getElementById(id2).classList.toggle('collapsed')
+    // document.getElementById(id2).classList.toggle('')
+
+  }
+
   render() {
     return (
       <div className="col-lg-8">
@@ -58,51 +114,46 @@ export default class Collapsables extends Component {
               {/* <canvas id="social-subscribers"></canvas> */}
             </div>
           </div>
-          <div className="card">
+          <div className="card"  >
             <div className="card-header">
-              <a href="#" className="card-title btn collapsed" data-toggle="collapse" data-target="#recently-subscribers-panel">Recently subscribers</a>
+              <Link onClick={() => this.toggleCollapse("recently-subscribers-panel", "recentId")} id="recentId" className="card-title btn collapsed" data-toggle="collapse" data-target="#recently-subscribers-panel">Recently subscribers</Link>
             </div>
-            <div id="recently-subscribers-panel" className="collapse" data-parent="#social-accordion">
+            <div id="recently-subscribers-panel"  className="collapse" data-parent="#social-accordion">
               <div className="card-body load-content">
-                <div className="loader-container">
+                {/* <div className="loader-container">
                   <div className="loader-8">Loading...</div>
-                </div>
+                </div> */}
+                <RecentSubscriber />
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card"  >
             <div className="card-header">
-              <a href="#" className="card-title btn collapsed" data-toggle="collapse" data-target="#twitter-trends-panel">Twitter trends</a>
+              <Link onClick={() => this.toggleCollapse("twitter-trends-panel", "twitterId")} id="twitterId" className="card-title btn collapsed" data-toggle="collapse" data-target="#twitter-trends-panel">Twitter trends</Link>
             </div>
             <div id="twitter-trends-panel" className="collapse" data-parent="#social-accordion">
               <div className="card-body load-content">
-                <div className="loader-container">
-                  <div className="loader-8">Loading...</div>
-                </div>
+                <Twitter />
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card"  >
             <div className="card-header">
-              <a href="#" className="card-title btn collapsed" data-toggle="collapse" data-target="#most-viewed-yt-videos-panel">Most viewed youtube videos</a>
+              <Link onClick={() => this.toggleCollapse("most-viewed-yt-videos-panel", "youtubeId")} id="youtubeId" className="card-title btn collapsed" data-toggle="collapse" data-target="#most-viewed-yt-videos-panel">Most viewed youtube videos</Link>
             </div>
             <div id="most-viewed-yt-videos-panel" className="collapse" data-parent="#social-accordion">
               <div className="card-body load-content">
-                <div className="loader-container">
-                  <div className="loader-8">Loading...</div>
-                </div>
+                <Youtube />
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card"  >
             <div className="card-header">
-              <a href="#" className="card-title btn collapsed" data-toggle="collapse" data-target="#fb-audience-growth-panel">Facebook audience growth</a>
+              <Link onClick={() => this.toggleCollapse("fb-audience-growth-panel", "facebookId")} id="facebookId" className="card-title btn collapsed" data-toggle="collapse" data-target="#fb-audience-growth-panel">Facebook audience growth</Link>
             </div>
             <div id="fb-audience-growth-panel" className="collapse" data-parent="#social-accordion">
               <div className="card-body load-content">
-                <div className="loader-container">
-                  <div className="loader-8">Loading...</div>
-                </div>
+                <Facebook />
               </div>
             </div>
           </div>

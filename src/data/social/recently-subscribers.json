@@ -1,1 +1,38 @@
-[{"date":"11 mins ago","network":"youtube","user":{"name":"tracy simpson","email":"tracy.simpson@example.com","picture":"https:\/\/randomuser.me\/api\/portraits\/thumb\/women\/62.jpg"}},{"date":"8 mins ago","network":"twitter","user":{"name":"evan bernard","email":"evan.bernard@example.com","picture":"https:\/\/randomuser.me\/api\/portraits\/thumb\/men\/78.jpg"}},{"date":"8 hours ago","network":"facebook","user":{"name":"nathan bishop","email":"nathan.bishop@example.com","picture":"https:\/\/randomuser.me\/api\/portraits\/thumb\/men\/31.jpg"}},{"date":"18 hours ago","network":"facebook","user":{"name":"maddison lane","email":"maddison.lane@example.com","picture":"https:\/\/randomuser.me\/api\/portraits\/thumb\/women\/19.jpg"}}]
+[
+  {
+    "date": "11 mins ago",
+    "network": "youtube",
+    "user": {
+      "name": "tracy simpson",
+      "email": "tracy.simpson@example.com",
+      "picture": "https://randomuser.me/api/portraits/thumb/women/62.jpg"
+    }
+  },
+  {
+    "date": "8 mins ago",
+    "network": "twitter",
+    "user": {
+      "name": "evan bernard",
+      "email": "evan.bernard@example.com",
+      "picture": "https://randomuser.me/api/portraits/thumb/men/78.jpg"
+    }
+  },
+  {
+    "date": "8 hours ago",
+    "network": "facebook",
+    "user": {
+      "name": "nathan bishop",
+      "email": "nathan.bishop@example.com",
+      "picture": "https://randomuser.me/api/portraits/thumb/men/31.jpg"
+    }
+  },
+  {
+    "date": "18 hours ago",
+    "network": "facebook",
+    "user": {
+      "name": "maddison lane",
+      "email": "maddison.lane@example.com",
+      "picture": "https://randomuser.me/api/portraits/thumb/women/19.jpg"
+    }
+  }
+]
