@@ -9,7 +9,7 @@ import data from '../../data/world-50m-simplified.json'
 
 export default function Map() {
   return (
-    <ComposableMap width={400} height={300}>
+    <ComposableMap style={{maxWidth:'100%'}} width={400} height={300}>
       <ZoomableGroup>
         <Geographies geography={data}>
           {(geographies, projection) => geographies.map((geography, i) => (
